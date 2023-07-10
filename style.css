@@ -22,10 +22,13 @@ header{
 }
 
 .container_1 h2{
-    position: relative;
     font-size: 1.5em;
+    position: relative;
     left: 20px;
     background-color: #4296ca;
+}
+
+.container_1 h2, footer h2{
     background-image: linear-gradient(
         45deg,
         #ca4272 16.666%, 
@@ -45,7 +48,7 @@ header{
     animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
 }
 
-.container_1 h2:hover{
+.container_1 h2:hover, footer h2:hover{
     animation: rainbow-text-simple-animation 0.5s ease-in forwards;
 }
 
@@ -897,19 +900,149 @@ header a {
 }
 
 
+/*    Newsletter       */
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("Images/Banner/14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30% ;
+    background-color: #041e42;
+    padding: 25px 30px 25px 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 800;
+    color: whitesmoke;
+}
+
+#newsletter p{
+    font-size: 14px;
+    font-weight: 700;
+    color:  wheat;
+}
+
+#newsletter p span{
+    color: rgb(215, 127, 11);
+}
+
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#newsletter button{
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    font-weight: 900;
+    outline: none;
+    white-space: nowrap;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#newsletter button:hover{
+    background: rgb(215, 127, 11);
+    border: 1px solid wheat;
+    color: black;
+}
 
 
+/*      Footer      */
+.section-footer{
+    padding: 40px 80px;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
 
 
+footer .col-foot{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 2px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+
+footer  .follow{
+    margin-top: 20px;
+}
+
+footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
 
 
+footer .install .row img{
+    border: 1px solid  rgb(215, 127, 11);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+    cursor: pointer;
+}
 
 
+footer .follow i:hover,
+footer a:hover{
+    color: rgb(215, 127, 11);
+}
 
-
-
-
-
-
-
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
 
