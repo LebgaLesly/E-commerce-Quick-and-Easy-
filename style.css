@@ -110,6 +110,7 @@ header a {
     position: relative;
 }
 
+
 .section-nav .nav ul li a{
     color: black;
     text-decoration: none;
@@ -153,7 +154,7 @@ header a {
 .section-nav .products {
     position: relative; 
   }
-  
+
 .section-nav .dropdown {
     background-color: #F18F43;
     padding: 1em 0;
@@ -167,7 +168,7 @@ header a {
 .section-nav .dropdown li + li {
     margin-top: 2px;
   }
-  
+
 .section-nav .dropdown li {
     padding: 5px 5px;
     width: 11em;
@@ -179,16 +180,16 @@ header a {
     background-color: white;
     border-radius: 5px;
   }
-  
+
 .section-nav .products:hover .dropdown {
     display: block;
   }
 
   /*       Mobile Navigation     */
 
-.nav-bar{
+  .nav-bar{
     overflow: hidden;
-    background-color: wheat;  
+    background: hsl(0 0% 0% / 0.8);
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -200,11 +201,11 @@ header a {
     font-size:20px;
     cursor:pointer; 
     padding-left: 10px;
-    color: #088178;
+    color: wheat;
 }
 
 .nav-bar span:hover{
-    color: rgb(244, 207, 19);
+    color:#E16541;
 }
 
 .nav-bar li{
@@ -213,7 +214,7 @@ header a {
 }
 
 .nav-bar a {
-    color: #088178;
+    color: wheat;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -221,7 +222,7 @@ header a {
   }
   
   .nav-bar a:hover {
-    color: rgb(244, 207, 19);
+    color: #E16541;
   }
   
 
@@ -232,10 +233,10 @@ header a {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background: hsl(0 0% 10% / 0.75);
+    backdrop-filter: blur(1rem);
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 1s;
   }
   
   .overlay #nav{
@@ -258,11 +259,28 @@ header a {
     font-size: 40px;
     color: #E16541;
   }
+  .overlay .closebtn:hover{
+    color: wheat;
+  }
+
+  .nav-bar .dropdown-content li{
+    position: relative;
+    display: none;
+  }
+
+  .nav-bar .dropdown-content li a:hover{
+    color:rgb(243, 181, 25);
+  }
+
+  .nav-bar .products:hover .dropdown-content li{
+    display: initial;
+  }
+
 
 
   /*         Intro Banner       */
 
-  .banner-intro{
+.banner-intro{
     position: relative;
     bottom: 40px;
     background-color: rgb(225, 219, 201);
@@ -345,9 +363,11 @@ header a {
 .section-feature .fe-box3{
     border: 1px solid rgb(131, 244, 184);
 }
+
 .section-feature .fe-box5{
     border: 1px solid rgb(203, 147, 231);
 }
+
 .section-feature .fe-box6{
     border: 1px solid rgb(244, 205, 158);
 }
