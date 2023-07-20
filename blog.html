@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick and Easy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+    <header>
+
+        <!---------Creating a div for Logo and fonts-->
+  
+        <div class="container_1">
+              <h2><a href="">Quick and Easy</a></h2>
+              <ul class="large">
+                 <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                 <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                 <li><a href="#"><i class="fa-sharp fa-regular fa-heart"></i></a></li>
+              </ul>
+        </div>
+       </header>
+
+       <main>
+
+        <!------------Section for Navigation ------------->
+
+        <section class="section-nav">
+
+         <!-------navigation elements----->
+
+         <div class="nav" >
+            <ul class="large">
+               <li><a href="index.html" id="a2" >Home</a></li>
+               <li class="products">
+
+                  <!------Dropdown nav for products-->
+
+                  <a href="Products/product.html" id="a1">Products</a>
+                  <ul class="dropdown">
+                  <li><a href="Products/men.html">Men</a></li>
+                  <li><a href="Products/women.html">Women</a></li>
+                  <li><a href="Products/footwear.html">Footwear</a></li>
+                  </ul>
+               </li>
+               <li><a href="#" id="a3" class="active">Blog</a></li>
+               <li><a href="about.html" id="a3">About</a></li>
+               <li><a href="contact.html" id="a3">Contact</a></li>
+            </ul>
+         </div>
+
+         <!--------------Mobile navigation----------------->
+         
+         <div id="mobile" class="nav-bar">
+            <div id="mobile-nav" class="overlay">
+               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               <div id="nav" >
+                  <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li class="products">
+      
+                        <!------Dropdown nav for products---->
+      
+                        <a href="Products/product.html">Products</a>
+                        <ul class="dropdown-content">
+                        <li><a href="Products/men.html">Men</a></li>
+                        <li><a href="Products/women.html">Women</a></li>
+                        <li><a href="Products/footwear.html">Footwear</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="#">Blog</a></li>
+                     <li><a href="about.html" >About</a></li>
+                     <li><a href="contact.html" >Contact</a></li>
+                  </ul>
+               </div>
+            </div>
+            <span  onclick="openNav()">&#9776;</span>
+            <div class="icons">
+               <ul>
+                  <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                  <li><a href="#"><i class="fa-sharp fa-regular fa-heart"></i></a></li>
+               </ul>
+         </div>
+         </div>
+
+      </section>
+
+
+      <!------------------Newsletter----------->
+
+      <section id="newsletter">
+         <div class="newstext">
+            <h4>Sign Up for Newsletter</h4>
+            <p>Get E-mail updates about our latest products and <span>special offers</span></p>
+         </div>
+         <div class="form">
+            <input type="text"   placeholder="Your Email Address">
+            <button >Sign Up</button>
+         </div>
+      </section>
+   </main>
+
+      <!--------------Footer------------->
+
+   <footer class="section-footer">
+      <div class="col-foot">
+         <h2><a href="" class="logo">Quick and Easy</a></h2>
+         <h4>Contact</h4>
+         <p><strong>Address:</strong> P O Box 24200 Bepanda Ambiance, Douala, Littoral , Cameroon </p>
+         <p><strong>Phone:</strong> +237 677089358</p>
+         <p><strong>Hours:</strong> 24/7, Mon - Sat</p>
+         <div class="follow">
+            <h4> Follow Us: </h4>
+            <div class="icon">
+               <i class="fab fa-facebook-f" id="facebook"></i>
+               <i class="fab fa-twitter" id="twitter"></i>
+               <i class="fab fa-instagram" id="instagram"></i>
+               <i class="fab fa-pinterest-p" id="pinterest"></i>
+               <i class="fab fa-youtube" id="youtube"></i>
+            </div>
+
+         </div>
+      </div>
+      <div class="col-foot">
+         <h4>About</h4>
+         <a href="#">About Us</a>
+         <a href="#">Delivery Information</a>
+         <a href="#">Privacy Policy</a>
+         <a href="#">Terms & Conditions</a>
+         <a href="#">Contact Us</a>
+      </div>
+      <div class="col-foot">
+         <h4>My Account</h4>
+         <a href="#">Sign In</a>
+         <a href="#">View Cart</a>
+         <a href="#">My Wish list</a>
+         <a href="#">Track My Order</a>
+         <a href="#">Help</a>
+      </div>
+      <div class="col-foot install">
+         <h4>Install App</h4>
+         <p>From App Store or Google Play</p>
+         <div class="row">
+            <img src="..\Images/App/play.jpg" alt="">
+            <img src="..\Images/App/app.jpg" alt="">
+         </div>
+         <p>Secured payment Methods</p>
+         <img src="..\Images/App/pay.png" alt="">
+      </div>
+
+      <div class="copyright">
+         <p>© 2023, All rights reserved</p>
+      </div>
+   </footer>
+
+   <script src="script.js"></script>
+  
+</body>
+</html>

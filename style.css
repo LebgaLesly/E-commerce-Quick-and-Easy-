@@ -131,7 +131,6 @@ header a:hover{
 
 .section-nav .nav ul li a.active::after{
     content: "";
-    width: 60%;
     height: 3px;
     background: #F18F43;
     position: absolute;
@@ -151,16 +150,12 @@ header a:hover{
     transition: 0.3s, ease;
 }
 
-.section-nav .nav ul li #a3:hover:after{
-    width: 60%; 
-}
-
 .section-nav .products {
     position: relative; 
   }
 
 .section-nav .dropdown {
-    background-color: white;
+    background-color: wheat;
     padding: 1em 0;
     position: absolute;
     display: none;
@@ -1237,7 +1232,7 @@ footer .copyright{
 .h4limit-space{
     font-size: 45px;
     text-align: center;
-    padding-top: 35px;
+    padding-top: 25px;
     padding-bottom: 15px;
     overflow-x: hidden;
 }
@@ -1257,7 +1252,7 @@ footer .copyright{
     font-size: 15px;
     font-weight: 900;
     text-decoration: none;
-    left: 40em;
+    left: 38em;
     top: 3em;
     background-color: #088178;
     color: black;
@@ -1297,9 +1292,86 @@ footer .copyright{
 }
 
 .pagination a i{
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 600;
 }
+
+
+/*   Single product page   */
+
+#pro-details{
+    padding: 40px 80px;
+    display: flex;
+    margin-top: 20px;
+
+}
+
+#pro-details .single-pro-img{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+
+#pro-details .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#pro-details .single-pro-details h2{
+    font-size: 30px;
+}
+
+#pro-details .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#pro-details .single-pro-details input{
+    width: 50px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#pro-details .single-pro-details button{
+    background-color: #088178;
+    color: black;
+    font-size: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    font-weight: 900;
+    outline: none;
+    border-color: #088178;
+}
+
+#pro-details .single-pro-details button:hover{
+    background-color: wheat;
+    border-color: wheat;
+}
+
+#pro-details .single-pro-details h4{
+    margin-top: 20px;
+}
+
+#pro-details .single-pro-details span{
+    margin-top: 50px;
+    line-height: 25px;
+}
+
 
 
 
@@ -1321,7 +1393,7 @@ footer .copyright{
 
 /*      Media Queries for Home page    */
 
-/*  For Medium screen devices Devices    */
+/*  For Medium screen devices   */
 
 @media only screen and (max-width:799px) {
     .section-nav .nav ul li {
@@ -1468,4 +1540,52 @@ footer .copyright{
     #newsletter .form {
         width: 100%;
     }
+}
+
+/*  Media Queries for Product Page   */
+
+/*  For Medium screen devices  */
+
+@media only screen and (max-width:799px){
+
+    .banner-intro-pro {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .more a {
+        left: 20em;  
+    }
+}
+
+/*   For Medium screen devices */
+
+@media only screen and  (max-width: 477px){
+
+    .banner-intro-pro {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .banner-intro-pro h2 {
+        font-size: 30px;
+        padding-left: 0;
+        color: rgb(246, 199, 110);
+    }
+
+    .banner-intro-pro p {
+        font-size: 15px;
+        padding-left: 0;
+        color: #088178;
+    }
+
+    .more a {
+        left: 10em;
+        top: 1.5em;
+    }
+
+    .h4limit-space {
+        font-size: 25px;
+        padding-top: 10px;
+    }
+
 }
