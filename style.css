@@ -88,6 +88,10 @@ header a {
     text-decoration: none;
 }
 
+header a:hover{
+    color:#088178;
+}
+
 /*      Main        */
 
 /*      Navigation section    */
@@ -156,7 +160,7 @@ header a {
   }
 
 .section-nav .dropdown {
-    background-color: #F18F43;
+    background-color: white;
     padding: 1em 0;
     position: absolute;
     display: none;
@@ -170,17 +174,11 @@ header a {
   }
 
 .section-nav .dropdown li {
-    padding: 5px 5px;
-    width: 11em;
-    height: auto;
+    width: 8em;
+    height: 5vh;
     text-align: center;
   }
   
-.section-nav .dropdown li:hover {
-    background-color: white;
-    border-radius: 5px;
-  }
-
 .section-nav .products:hover .dropdown {
     display: block;
   }
@@ -1209,7 +1207,107 @@ footer .copyright{
     text-align: center;
 }
 
+
+/*       Products   Page       */
+
+/*    Intro Banner     */
+
+.banner-intro-pro{
+    position: relative;
+    background-color: rgb(246, 229, 196);
+    background-image: url("Images/Banner/16\ a.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right 80%;
+    background-blend-mode:multiply;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    align-content: center;
+}
+
+.banner-intro-pro h2{
+    position: relative;
+    font-size: 50px;
+    font-weight: 900;
+    padding-left: 3em;
+    color:#F18F43;
+}
+
+.banner-intro-pro p{
+    position: relative;
+    font-size: 20px;
+    font-weight: 900;
+    padding-left: 8em;
+    color: grey;
+
+}
+
+
+/*     Utility classes for Product Page   */
+
+.prod-m{
+    margin-bottom: 2em;
+}
+
+.h4limit-space{
+    font-size: 45px;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    overflow-x: hidden;
+}
+
+.h4limit-space a{
+    text-decoration: none;
+    color: black;
+}
+
+.h4limit-space a:hover{
+    color: #F18F43;
+}
+
+.more a{
+    position: relative;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 900;
+    text-decoration: none;
+    left: 40em;
+    top: 3em;
+    background-color: #088178;
+    color: black;
+    padding: 8px 8px;
+    border-radius: 5px;
+}
+
+.more a:hover{
+    color:rgb(243, 201, 95);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*      Media Queries      */
+
+/*      Media Queries for Home page    */
 
 /*  For Medium screen devices Devices    */
 
