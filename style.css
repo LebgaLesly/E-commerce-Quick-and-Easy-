@@ -522,12 +522,6 @@ header a:hover{
 
 
 /*     Women Product      */
-
-.div1:hover {
-    transition: 0.3s ease;
-    -webkit-transform: scale(1.05);
-}
-
 .h4women{
     font-size: 45px;
     text-align: center;
@@ -624,12 +618,6 @@ header a:hover{
 
 
 /*     Footwear     */
-
-.div2:hover {
-    transition: 0.3s ease;
-    -webkit-transform: scale(1.05);
-}
-
 .footwear{
     font-size: 45px;
     text-align: center;
@@ -782,11 +770,6 @@ header a:hover{
 
 
 /*       Limited Products     */
-.div3:hover {
-    transition: 0.3s ease;
-    -webkit-transform: scale(1.2);
-}
-
 .h4limit{
     font-size: 45px;
     text-align: center;
@@ -1240,7 +1223,7 @@ footer .copyright{
     font-size: 20px;
     font-weight: 900;
     padding-left: 8em;
-    color: grey;
+    color: #088178;
 
 }
 
@@ -1286,8 +1269,37 @@ footer .copyright{
     color:rgb(243, 201, 95);
 }
 
+.all-prod{
+    margin-bottom: 20px;
+}
 
 
+.pagination{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: whitesmoke;
+    font-weight: 800;
+}
+
+.pagination .active1{
+    background-color: rgb(243, 201, 95);
+}
+
+.pagination a:hover{
+    background-color:rgb(243, 201, 95);
+}
+
+.pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
 
 
 
