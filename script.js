@@ -1,4 +1,5 @@
-// For Hamburger Menu
+// For Hamburger Men
+
 const openNav = () => {
     document.getElementById("mobile-nav").style.width = "50%";
   }
@@ -8,11 +9,13 @@ const closeNav = () => {
   }
 
 
-// For Single Product page
+  // For Single Product page
 
-let mainImage = document.getElementById("main-img");
 
-let smallImage = document.getElementsByClassName("small-img");
+const mainImage = document.getElementById("main-img");
+
+const smallImage = document.getElementsByClassName("small-img");
+
 
 smallImage[0].onclick = () => {
   mainImage.src = smallImage[0].src;
