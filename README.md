@@ -12,7 +12,7 @@ i pushed through learning alot along the way.
 ## Technologies Used
 - HTML5
 - CSS3
-- ES12
+- Javascript
 
 
 ## Features
